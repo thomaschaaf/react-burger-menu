@@ -11,7 +11,10 @@ let styles = {
       background: 'rgba(0, 0, 0, 0.3)',
       opacity: isOpen ? 1 : 0,
       transform: isOpen ? '' : 'translate3d(-100%, 0, 0)',
-      transition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s'
+      "-webkit-transform": isOpen ? '' : 'translate3d(-100%, 0, 0)',
+      "-ms-transform": isOpen ? '' : 'translate3d(-100%, 0, 0)',
+      transition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s',
+      "-webkit-transition": isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s'
     };
   },
 
@@ -23,7 +26,10 @@ let styles = {
       width,
       height: '100%',
       transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-      transition: 'all 0.5s'
+      "-webkit-transform": isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+      "-ms-transform": isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+      transition: 'all 0.5s',
+      "-webkit-transition": 'all 0.5s'
     };
   },
 
