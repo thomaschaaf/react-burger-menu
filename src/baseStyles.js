@@ -12,7 +12,7 @@ let styles = {
       opacity: isOpen ? 1 : 0,
       transform: isOpen ? '' : 'translate3d(-100%, 0, 0)',
       "-webkit-transform": isOpen ? '' : 'translate3d(-100%, 0, 0)',
-      "-ms-transform": isOpen ? '' : 'translate3d(-100%, 0, 0)',
+      "-ms-transform": isOpen ? '' : 'translateX(-100%)',
       transition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s',
       "-webkit-transition": isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s'
     };
@@ -27,7 +27,7 @@ let styles = {
       height: '100%',
       transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
       "-webkit-transform": isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-      "-ms-transform": isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+      "-ms-transform": isOpen ? '' : right ? 'translateX(100%)' : 'translate3d(-100%)',
       transition: 'all 0.5s',
       "-webkit-transition": 'all 0.5s'
     };
