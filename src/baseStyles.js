@@ -13,8 +13,8 @@ let styles = {
       WebkitTransform: isOpen ? '' : 'translate3d(-100%, 0, 0)',
       msTransform: isOpen ? '' : 'translateX(-100%)',
       transform: isOpen ? '' : 'translate3d(-100%, 0, 0)',
-      transition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s',
       WebkitTransition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s',
+      transition: isOpen ? 'opacity 0.3s' : 'opacity 0.3s, transform 0s 0.3s',
     };
   },
 
@@ -25,18 +25,19 @@ let styles = {
       zIndex: 2,
       width,
       height: '100%',
-  	  msTransform: isOpen ? '' : right ? 'translateX(100%)' : 'translateX(-100%)',
-  		transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-      WebkitTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-    	transition: 'all 0.5s',
-      WebkitTransition: 'all 0.5s',
+      pointerEvents: 'none'
     };
   },
 
-  menu() {
+  menuWrap(isOpen, width, right) {
     return {
       height: '100%',
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
+      msTransform: isOpen ? '' : right ? 'translateX(100%)' : 'translateX(-100%)',
+      WebkitTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+  		transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
+      WebkitTransition: 'all 0.5s',
+    	transition: 'all 0.5s',
     };
   },
 
