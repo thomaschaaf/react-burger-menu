@@ -25,11 +25,11 @@ let styles = {
       zIndex: 2,
       width,
       height: '100%',
-      WebkitTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
   	  msTransform: isOpen ? '' : right ? 'translateX(100%)' : 'translateX(-100%)',
   		transform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
-    	WebkitTransition: 'all 0.5s',
+      WebkitTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
     	transition: 'all 0.5s'
+      WebkitTransition: 'all 0.5s',
     };
   },
 
