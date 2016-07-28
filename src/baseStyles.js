@@ -29,7 +29,7 @@ let styles = {
     };
   },
 
-  menuWrap(isOpen, width, right) {
+  menu(isOpen, width, right) {
     return {
       height: '100%',
       boxSizing: 'border-box',
